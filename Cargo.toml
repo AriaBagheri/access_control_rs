@@ -1,0 +1,21 @@
+[package]
+name = "access_control_rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+argon2 = "0.5.3"
+rust-iam = {path = "/Users/aria/Desktop/v4/rust-iam", version = "0.1.2", features = ["with-sqlx"]}
+ss = {path = "/Users/aria/Desktop/v4/sendsational-commons", package = "sendsational-commons", features = ["with-sqlx"]}
+passwords-rs = {path = "/Users/aria/Desktop/v4/passwords_rs", features = ["with-sqlx"]}
+optionalize = {git = "ssh://git@github.com/AriaBagheri/optionalize.git"}
+serde = { version = "1.0.215", features = ["derive"] }
+tokio = { version = "1.41.1", features = ["full"] }
+serde_json = "1.0.133"
+sqlx = { version="0.8.2", features = ["sqlx-postgres", "postgres", "runtime-tokio", "uuid"] }
+log = "0.4.22"
+dotenv = "0.15.0"
+async-std = "1.13.0"
+futures = "0.3.31"
+uuid = { version = "1.11.0", features = ["v4"] }
+tracing = "0.1.41"
